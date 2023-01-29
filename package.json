@@ -1,0 +1,25 @@
+{
+  "name": "csma",
+  "description": "Centralized SSH Management Application",
+  "version": "1.0.0",
+  "author": "Ji Yong, Kim <nemo@qroffle.com>",
+  "license": "MIT",
+  "type": "module",
+  "exports": "./src/index.js",
+  "bin": {
+    "csma": "./bin/csma.js"
+  },
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "engines": {
+    "node": ">=16.18"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "got": "^12.5.3",
+    "koa": "^2.14.1",
+    "portfinder": "^1.0.32",
+    "sshpk": "^1.17.0"
+  }
+}
